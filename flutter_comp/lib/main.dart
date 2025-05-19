@@ -22,23 +22,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('TextField Simple')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: TextField(
-          decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            labelText: 'Nombre',
-            hintText: 'Escribe tu nombre',
-          ),
-          onChanged: (text) {
-            print('Texto ingresado: $text');
-          },
-        ),
-      ),
-    );
-  }
+  
+
 }
