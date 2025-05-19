@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 void main() { runApp(MyApp());}
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,6 +20,21 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+    return Scaffold(
+      appBar: AppBar(title: Text('ElevatedButton')),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            print('ElevatedButton presionado');
+          },
+          child: Text('ElevatedButton'),
+          style: ElevatedButton.styleFrom(
+            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            textStyle: TextStyle(fontSize: 20),
+          ),
+        ),
+      ),
+    );
   }
+
 }
